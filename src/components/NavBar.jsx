@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.styles.scss';
-import { SocialIcon } from 'react-social-icons';
 
 const NavBar = () => {
     return (
@@ -17,24 +16,19 @@ const NavBar = () => {
                     HOME
                 </NavLink>
 
-                <NavLink className='option' to="/post">
-                    POST
+                <NavLink className='option' to="/sample">
+                    PAGE1
                 </NavLink>
 
-                <NavLink className='option' to="/project">
-                    PROJECT
+                <NavLink className='option' to="/sample">
+                    PAGE2
                 </NavLink>
 
                 <NavLink className='option' to="/about">
-                    ABOUT
+                    ABOUT ME
                 </NavLink>
             </div>
-            <div className='options2'>
-                <SocialIcon url="https://github.com/VishnuSivadas1994" className="option" target="_blank" fgColor="#fff" stlye={{ height: 25, width: 25 }} />
-                <SocialIcon url="https://www.linkedin.com/in/sivadasv/" className="option" target="_blank" fgColor="#fff" stlye={{ height: 25, width: 25 }} />
-                <SocialIcon url="#" className="option" target="_blank" fgColor="#fff" stlye={{ height: 25, width: 25 }} />
-
-            </div>
+            
         </div>
     )
 }
