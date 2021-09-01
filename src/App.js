@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/web-template">
+    <BrowserRouter basename="/web-template">{/*basename for starting route in ghpages*/}
       <NavBar />
       <Switch>
         <Route component={Home} path='/' exact />
