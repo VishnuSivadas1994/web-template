@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-template">
       <NavBar />
       <Switch>
         <Route component={Home} path='/' exact />
